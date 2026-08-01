@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | RoadRescue SA</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+    <section class="login-section">
+
+
+        <div class="login-box">
+
+
+            <div class="login-logo">
+
+                <i class="fa-solid fa-shield-heart"></i>
+
+                <h1>RoadRescue SA</h1>
+
+                <p>Emergency Response System</p>
+
+            </div>
+
+
+
+            <form id="loginForm">
+
+
+                <label for="username">
+
+                    Username
+
+                </label>
+
+
+                <input type="text" id="username" placeholder="Enter username" autocomplete="username" required>
+
+
+
+                <label for="password">
+
+                    Password
+
+                </label>
+
+
+                <input type="password" id="password" placeholder="Enter password" autocomplete="current-password"
+                    required>
+
+
+
+                <label for="role">
+
+                    Login As
+
+                </label>
+
+
+                <select id="role">
+
+
+                    <option value="admin">
+
+                        Admin
+
+                    </option>
+
+
+                    <option value="mechanic">
+
+                        Mechanic
+
+                    </option>
+
+
+                    <option value="hospital">
+
+                        Hospital
+
+                    </option>
+
+
+                    <option value="police">
+
+                        Police
+
+                    </option>
+
+
+                    <option value="towing">
+
+                        Towing
+
+                    </option>
+
+                    <option value="fire">
+                        Fire Rescue
+                    </option>
+
+                    <option value="fuel">
+                        Fuel Delivery
+                    </option>
+
+                </select>
+
+
+
+                <button type="submit">
+
+                    Login
+
+                </button>
+
+
+            </form>
+
+
+            <p id="loginMessage"></p>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <script src="login.js"></script>
+
+
+</body>
+
+</html>

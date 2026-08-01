@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Track Emergency | RoadRescue SA</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+<i class="fa-solid fa-shield-heart"></i>
+
+RoadRescue SA
+
+</div>
+
+
+<a href="index.html" class="emergency-btn">
+
+Home
+
+</a>
+
+</nav>
+
+</header>
+
+
+
+<section class="track-section">
+
+
+<div class="track-container">
+
+
+<h1>
+
+📍 Track Your Emergency
+
+</h1>
+
+
+<p>
+
+Monitor the live status and feedback of your emergency request.
+
+</p>
+
+<!-- TRACK SEARCH BAR -->
+<div class="track-search-box" style="margin-bottom: 20px; display: flex; gap: 10px; max-width: 500px; margin-left: auto; margin-right: auto;">
+  <input type="text" id="trackSearchInput" placeholder="Enter Request ID (e.g. RR123456)..." style="flex:1; padding:10px; border-radius:8px; border:1px solid #ccc;">
+  <button onclick="searchRequest()" class="btn-primary" style="padding:10px 20px; border-radius:8px;">Track</button>
+</div>
+
+
+
+<div class="track-card">
+
+
+<div class="status-icon">
+
+<i class="fa-solid fa-clock"></i>
+
+</div>
+
+
+<h2 id="status">
+
+Loading...
+
+</h2>
+
+
+
+<div class="info">
+
+
+<p>
+
+<strong>Request ID:</strong>
+
+<span id="requestID">
+
+-
+
+</span>
+
+</p>
+
+
+
+<p>
+
+<strong>Service:</strong>
+
+<span id="service">
+
+-
+
+</span>
+
+</p>
+
+
+
+<p>
+
+<strong>Assigned To:</strong>
+
+<span id="assigned">
+
+Waiting...
+
+</span>
+
+</p>
+
+
+
+<p>
+
+<strong>Provider Feedback:</strong>
+
+<span id="providerFeedback" style="color: #d9534f; font-weight: bold;">
+
+No updates yet
+
+</span>
+
+</p>
+
+
+<p>
+
+<strong>Shared Location:</strong>
+
+<span id="locationText">
+
+-
+
+</span>
+
+</p>
+
+
+<div id="photoPreviewContainer" style="margin-top: 10px;"></div>
+
+
+<p>
+
+<strong>Date:</strong>
+
+<span id="date">
+
+-
+
+</span>
+
+</p>
+
+
+
+</div>
+
+
+
+
+<div class="progress">
+
+
+<div class="progress-step active">
+
+🚨
+
+<br>
+
+Submitted
+
+</div>
+
+
+<div class="progress-step">
+
+📋
+
+<br>
+
+Assigned
+
+</div>
+
+
+<div class="progress-step">
+
+🚑
+
+<br>
+
+On The Way
+
+</div>
+
+
+<div class="progress-step">
+
+✅
+
+<br>
+
+Completed
+
+</div>
+
+
+</div>
+
+
+
+
+<a href="request.html"
+
+class="new-request">
+
+Make Another Request
+
+</a>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+<script src="track.js"></script>
+
+
+</body>
+
+</html>

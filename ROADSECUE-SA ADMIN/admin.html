@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Dashboard | RoadRescue SA</title>
+
+<link rel="stylesheet" href="../HOME/STYLE.CSS">
+
+<link rel="stylesheet" href="ADMIN.CSS">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+<i class="fa-solid fa-shield-heart"></i>
+
+RoadRescue SA Admin
+
+</div>
+
+
+<a href="../HOME/LOGIN.HTML" class="emergency-btn">
+
+Logout
+
+</a>
+
+
+</nav>
+
+</header>
+
+
+
+<section class="dashboard">
+
+
+<div class="dashboard-header">
+
+<h1>
+
+Admin Control Centre
+
+</h1>
+
+<p>
+
+Manage emergency requests and dispatch services.
+
+</p>
+
+
+</div>
+
+
+
+<div class="stats">
+
+
+<div class="stat-card">
+
+<i class="fa-solid fa-triangle-exclamation"></i>
+
+<h3 id="totalRequests">
+
+0
+
+</h3>
+
+<p>Total Requests</p>
+
+</div>
+
+
+<div class="stat-card">
+
+<i class="fa-solid fa-clock"></i>
+
+<h3 id="pendingRequests">
+
+0
+
+</h3>
+
+<p>Pending</p>
+
+</div>
+
+
+
+<div class="stat-card">
+
+<i class="fa-solid fa-truck-medical"></i>
+
+<h3 id="activeRequests">
+
+0
+
+</h3>
+
+<p>Active</p>
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="requests-area">
+
+
+<h2>
+
+Emergency Requests
+
+</h2>
+
+<div class="filter-bar" style="margin-bottom: 20px; display: flex; gap: 10px; flex-wrap: wrap;">
+  <button class="filter-btn active" onclick="filterRequests('All', this)">All</button>
+  <button class="filter-btn" onclick="filterRequests('Mechanic', this)">🔧 Mechanic</button>
+  <button class="filter-btn" onclick="filterRequests('Hospital', this)">🚑 Hospital</button>
+  <button class="filter-btn" onclick="filterRequests('Police', this)">👮 Police</button>
+  <button class="filter-btn" onclick="filterRequests('Towing', this)">🚛 Towing</button>
+  <button class="filter-btn" onclick="filterRequests('Fire Rescue', this)">🔥 Fire Rescue</button>
+  <button class="filter-btn" onclick="filterRequests('Fuel Delivery', this)">⛽ Fuel Delivery</button>
+</div>
+
+
+<div id="requestsContainer"></div>
+
+
+<!-- DISPATCH PANEL -->
+
+<div id="dispatchPanel" class="dispatch-panel">
+
+<h2>
+🚑 Dispatch Emergency Service
+</h2>
+
+<p>Select a request first.</p>
+
+</div>
+
+
+
+</section>
+
+
+
+<script src="ADMIN.JS"></script>
+
+
+</body>
+
+</html>
